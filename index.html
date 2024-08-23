@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Please fill this form.</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Please enter your name." required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" class="form-control" type="email" name="email" placeholder="Please enter your email." required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age</label>
+                    <input id="number" class="form-control" type="number" min="10" max="120" placeholder="Your age.">
+                </div>
+                <div class="form-group">
+                    <p>Which option is the best describe of your current job?</p>
+                    <select id="dropdown" class="form-control" name="job" required>
+                        <option disabled selected value="">Select your current job.</option>
+                        <option value="full-job">Full time job</option>
+                        <option value="part-time-job">Part time job</option>
+                        <option value="full-learn">Full time learner</option>
+                        <option value="student">Student</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>How did you find us?</p>
+                    <label>
+                        <input class="input-radio" name="way-of-finding" value="search" type="radio">
+                        By searching
+                    </label>
+                    <label>
+                        <input class="input-radio" name="way-of-finding" value="friend" type="radio">
+                        By friend(s) recommendations
+                    </label>
+                    <label>
+                        <input class="input-radio" name="way-of-finding" value="social-media" type="radio">
+                        By social medias
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Are you interested in any of these subjects?</p>
+                    <label>
+                        <input class="input-checkbox" name="interested-in" value="Frontend" type="checkbox">
+                        Frontend
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="interested-in" value="Backend" type="checkbox">
+                        Backend
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="interested-in" value="DevOps" type="checkbox">
+                        DevOps
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="interested-in" value="full-stack" type="checkbox">
+                        Full Stack
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="interested-in" value="ai-and-data-scientist" type="checkbox">
+                        AI and Data Scientist
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="interested-in" value="data-analyst" type="checkbox">
+                        Data Analyst
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="interested-in" value="android" type="checkbox">
+                        Android
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="interested-in" value="ios" type="checkbox">
+                        iOS
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="interested-in" value="cyber-security" type="checkbox">
+                        Cyber Security
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="interested-in" value="game-developer" type="checkbox">
+                        Game developer
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Do you have any suggestions?</p>
+                    <textarea id="suggestions" class="input-textarea" name="suggestions"></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="submit" class="submit-button" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
